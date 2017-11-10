@@ -1,0 +1,4 @@
+netstat -tulpno | grep:8080
+ls -la
+cd !$
+sudo chown =R git:git time_travel

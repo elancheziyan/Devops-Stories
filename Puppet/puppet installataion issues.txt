@@ -1,0 +1,19 @@
+https://yogeshmaloo.wordpress.com/2014/10/31/how-to-install-puppet-master-and-agent-on-amazon-linux-ami-ec2-instances/
+
+To start puppet master 
+$ sudo chkconfig puppetmaster on
+$ sudo service puppetmaster start
+
+To start agent
+$ sudo chkconfig puppet on
+$ sudo service puppet start
+
+
+puppet cert clean ip-10-0-0-216.ap-south-1.compute.internal
+
+On the master:
+ puppet cert clean ip-10-0-0-216.ap-south-1.compute.internal
+
+On the agent:
+  rm -f /home/ec2-user/.puppet/ssl/certs/ip-10-0-0-216.ap-south-1.compute.internal.pem
+  puppet agent -t

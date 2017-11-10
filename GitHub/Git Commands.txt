@@ -1,0 +1,67 @@
+https://github.com/elancheziyan/Devops-Stories.git
+
+echo "# Devops-Stories" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/elancheziyan/Devops-Stories.git
+git push -u origin master
+
+git remote add origin https://github.com/elancheziyan/Devops-Stories.git
+git push -u origin master
+
+GIT commands
+==============
+
+Instead of removing and re-adding, you can do this:
+git remote set-url origin git://new.url.here
+
+ - git help
+ - git remote add orgin https://github.com/elancheziyan/Devops.git
+ - git push -u orgin master
+ - git config --global user.email "cheziyan.s@gmail.com"
+ - git config --global user.name "elancheziyan"
+ - git init
+ - git satus
+ - git add
+ - git commit -m "message"
+ - git commit -v
+ - git commit -a -v
+ - git log
+ - git log -p
+
+ - git branch -a
+ - git co -b <branch name>
+ - git branch --color
+ - git branch <branch name>
+ - git checkout -b <branch name
+ - git co <branch>
+ - git diff <branch1> <branch2>
+ - git reset --hard ORIG_HEAD
+ - git merge <branch>
+ - git merge show_versions
+ - git stash <name>
+ - git stash list
+ - git stash clear
+ - git branch -d <branch name>
+ - git remote show orgin
+ - git remote add <name>
+ - git remote show <name>
+ - git fetch <name>
+ - git branch --track branch branch
+fetch
+merge
+
+ - scp -r <branch> <repository name>:branch name
+ - git clone <repository>:<branch name>
+gb
+gst
+ - git ls-files
+ - git rm <folder / file>
+
+
+ - gitk
+ - gitk --all
+
+ - tree .git
+ - touch .gitignore

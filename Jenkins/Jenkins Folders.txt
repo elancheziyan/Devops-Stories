@@ -1,0 +1,6 @@
+jenkins default port
+=====================
+/root/.jenkins/secrets/initialAdminPassword
+/etc/default/jenkins 
+
+jenkins Home folder for Amazon Linux -> /var/lib/jenkins/

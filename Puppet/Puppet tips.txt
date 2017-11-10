@@ -1,0 +1,35 @@
+Install Puppet Enterprise on puppet.example.vm. 
+[puppet.example.vm] Failed to run PE installer on puppet.example.vm.
+
+* /opt/puppetlabs/puppet/bin/puppet infrastructure configure --debug --detailed-exitcodes --modulepath=/opt/puppetlabs/server/data/enterprise/modules --no-noop  
+* returned: 1
+2017-10-16 07:08:01,030 Running command: /opt/puppetlabs/puppet/bin/puppet agent --enable
+2017-10-16 07:08:00,972 [ERROR]: !! There were problems during the application of the installation catalog. !!
+2017-10-16 07:08:01,024 [ERROR]: !! Review the logs at /var/log/puppetlabs/installer/2017-10-16T04.57.28+0000.install.log and resolve any issues you can find. !!
+2017-10-16 07:08:01,027 [ERROR]: !! After fixing any errors, re-run the installer to complete the installation or upgrade. !!
+
+
+
+10.0.2.15
+root
+obrien.eustis
+password can be found in /var/local/password
+
+to set a new password run the command: reset_password.rb
+
+facter ipaddress
+172.18.0.1
+
+Web console Login:
+URL:https://<puppet ip address>
+user: puppet@example.com
+Pwd : learningpuppet
+
+puppet resource user root
+
+puppet resource user root > root.pp
+
+Puppet
+=======
+puppet module generate -  puppet module generate reidmv/motd
+puppet parser validate manifests/init.pp

@@ -1,0 +1,30 @@
+https://www.youtube.com/playlist?annotation_id=annotation_2674796151&feature=iv&list=PLhW3qG5bs-L_ZCOA4zNPSoGbnVQ-rp_dG&src_vid=Fi9pgrMlQZY
+
+How to change Home Directory
+=============================
+jenkins home Directory contatins
+1. All Configuration
+2. Plugins
+3. Jobs Details
+4. Logs
+
+Why:
+- to Move jenkins home dir to a location that has enough disk space
+- project requirements
+
+Check your current home directory
+Manage jenkins
+-> Configure systems
+-> Home Directory
+
+->Create a new folder
+-> Copy everything from the old directory to the new directory
+
+Change env variable Jenkins_HOME and set to new dir
+
+Check your current home directory
+Manage jenkins
+-> Configure systems
+-> Home Directory
+
+.bash_Profile
